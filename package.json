@@ -1,5 +1,5 @@
 {
-  "name": "cdp-agentkit-monorepo",
+  "name": "cosmic-ai-agent",
   "private": true,
   "workspaces": [
     "typescript/agentkit",
@@ -21,9 +21,9 @@
     "lint:fix": "turbo run lint:fix",
     "test:types": "turbo run test:types"
   },
-  "author": "Coinbase Inc.",
-  "license": "Apache-2.0",
-  "repository": "https://github.com/coinbase/agentkit",
+  "author": "JuinSoft",
+  "license": "MIT",
+  "repository": "https://github.com/JuinSoft/Cosmic",
   "keywords": [
     "coinbase",
     "sdk",
@@ -37,6 +37,15 @@
     "monorepo",
     "langchain"
   ],
+  "dependencies": {
+    "@coinbase/agentkit": "^0.1.0",
+    "@coinbase/agentkit-langchain": "^0.1.0",
+    "@langchain/langgraph": "^0.2.21",
+    "@langchain/openai": "^0.3.14",
+    "@langchain/core": "^0.3.19",
+    "dotenv": "^16.4.5",
+    "zod": "^3.22.4"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "^20.12.11",
